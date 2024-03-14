@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="index.css">
+    <title>Form Validator-Intrainz Innovation Pvt. Ltd.</title>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <h1>Intrain Innovation Pvt. Ltd.</h1>
+            <h2>Form Validator</h2>
+        </div>
+    </header>
+    <main>
+        <div class="formbox">
+        <form action="" class="form" onsubmit="return formValidator()">
+            <legend>Personal Information</legend>
+            <div>
+                Name <input type="text" placeholder="Name" class="name" /> <span class="error"></span>
+            </div>
+            <div>
+                Email <input type="text" placeholder="Email" class="email"><span class="error"></span>
+            </div>
+            <div>
+                Contact Number <input type="tel" placeholder="Contact No." class="contact"><span class="error"></span>
+            </div>
+            <div>
+                Password <input type="password" placeholder="Password" class="password"><span class="error"></span>
+            </div>
+            <button onclick="SubmitEvent">Submit</button>
+        </div>
+            <div>
+                <p>*Note* <br>* Name must not be less than 5 charachters.<br>* Name cannot be in numbers. <br>* Contact
+                    number cannot be 1234567890 or 0123456789. <br>* Contact number cannot be in letter.<br>* Contact number
+                    must be a 10 digit number.<br>*Password cannot be the username or "password". <br>* password length
+                    should be less than 8 charachters.</p>
+                </div>
+            </form>
+        </main>
+        
+    <!-- JavaScrpit File -->
+    <script src="index.js"></script>
+</body>
+
+</html>
